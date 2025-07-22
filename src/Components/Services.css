@@ -1,0 +1,192 @@
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 4rem 2rem 2rem;
+    background-color: #fff;
+    color: #005f5f;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 50px;
+  }
+  
+  .services-heading-left h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-right: 50%;
+    color: #005f5f;
+    position: relative;   /* Needed for ::after positioning */
+    display: inline-block; /* Ensures ::after aligns properly */
+  }
+  .services-heading-left h1::after {
+    content: "";
+    display: block;
+    margin: 8px auto 0;       /* Spacing from text */
+    width: 60px;              /* Length of the line */
+    height: 4px;              /* Thickness */
+    background-color: rgb(240, 189, 67); /* Same color as text */
+    border-radius: 2px;
+  }
+  .services-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #005f5f;
+    margin-top: 1.5rem;
+  }
+  .services-heading-right {
+    flex: 1;
+    max-width: 450px;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight:bold ;
+ 
+  }
+  
+  
+.modern-services {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .full-service-section {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .full-service-section:hover {
+    text-decoration: none; /* prevent underline on hover */
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .overlay h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .full-service-section:hover .overlay h2 {
+    transform: scale(1.2);
+  }
+  
+  
+  .overlay p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    color: #f0f0f0;
+  }
+  .modern-services {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .full-service-section {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+
+  }
+  
+  .overlay p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .subservice-list {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .subservice-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .services-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 6rem;
+      padding: 2rem 1rem;
+    }
+  
+    .services-heading-left h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0;
+      white-space: nowrap; /* <-- keeps "Our Services" in one line */
+      color: #004d4d;
+    }
+  
+    .services-separator {
+      margin-top: 0.5rem;
+      font-size: 1.4rem;
+      color: #004d4d;
+    }
+  
+    .services-heading-right p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #333;
+      padding: 0;
+    }
+  }
+  

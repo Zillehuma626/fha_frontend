@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #005f5f;
+  }
+  
+  .logo {
+    color: #005f5f;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin-left: 2rem;
+    font-weight: 500;
+  }
+  
+  section {
+    padding: 5rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h2, h3 {
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+
+  

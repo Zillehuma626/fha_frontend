@@ -1,0 +1,21 @@
+
+body {
+  margin: 0;
+  padding-top: 30px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #fff;
+}
+
+a {
+  color:#005f5f ;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 4rem 2rem;
+}
