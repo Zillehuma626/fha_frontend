@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview --port 10000"
+    "start": "vite preview --port 10000"
   },
   "dependencies": {
     "i18next": "^25.3.2",
