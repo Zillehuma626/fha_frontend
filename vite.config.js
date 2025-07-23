@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: 'fha-accountants.onrender.com'
+    allowedHosts: 'all'
   },
   assetsInclude:['**/*.PNG'],
   server:{
