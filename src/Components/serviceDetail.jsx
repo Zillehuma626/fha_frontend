@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import services from './servicesData';
-import './ServiceDetail.css';
+import './serviceDetail.css';
 
 const ServiceDetail = () => {
   const { slug } = useParams();
