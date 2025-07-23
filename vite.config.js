@@ -5,13 +5,19 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: 'all'
+    allowedHosts: [
+      'fha-accountants.onrender.com', // Your Render host
+      'localhost',                    // For local testing
+    ],
+    strictPort: true,
+    host: '0.0.0.0', 
+    port:8000,
   },
   assetsInclude:['**/*.PNG'],
   server:{
     host:true,
     strictPort:true,
-    port:8000
+    port:8000,
   },
   resolve: {
     alias: {
