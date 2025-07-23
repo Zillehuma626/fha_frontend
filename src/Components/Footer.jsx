@@ -55,7 +55,7 @@ const Footer = () => {
 
           <p>
             ✉️  <a href="mailto:info@fhaconsultants.co.uk" className="footer-link">
-              Contact@fhaconsultants.co.uk
+              Contact@fhaaccountants.co.uk
             </a>
           </p>
           <p>+923425650559</p>
