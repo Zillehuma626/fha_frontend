@@ -7,7 +7,9 @@ export default defineConfig({
   preview: {
     allowedHosts: [
       'fha-accountants.onrender.com', // Your Render host
-      'localhost',                    // For local testing
+      'localhost',
+      'fhaccountants.co.uk',
+      'www.fhaaccountants.co.uk',
     ],
     strictPort: true,
     host: '0.0.0.0', 
