@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarFHA.css';
-import logo from '../assets/images/IMG_9032.PNG';
+import logo from '../assets/images/FHA.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
-        {/*<img src={logo} alt="FHA Logo" className="logo-img" />*/}
+        <img src={logo} alt="FHA Logo" className="logo-img" />
         <span className="logo-text">FHA Accountants</span>
       </Link>
 
