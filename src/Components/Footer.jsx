@@ -50,6 +50,7 @@ const Footer = () => {
             <li><a href="/services">Services</a></li>
             <li><a href="/partners">Partners</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/quoteSection">Quote Section</a></li>
           </ul>
         </div>
         <div className="footer-col">
