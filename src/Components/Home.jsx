@@ -18,6 +18,15 @@ const Home = () => {
             with zero guesswork.
           </p>
           <Link to="/contact" className="cta-button">Get in Touch</Link>
+          <a    
+            href="https://wa.me/923425650559"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-button"
+          >
+            <FaWhatsapp className="whatsapp-icon" />
+            WhatsApp
+          </a>
         </div>
       </div>
     </div>
