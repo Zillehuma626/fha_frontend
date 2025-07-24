@@ -15,13 +15,17 @@
   
   .footer-col {
     flex: 1 1 220px;
+   
   }
-  
+  .footer-col h2 {
+    color: #005f5f;
+    
+  }
   .footer-logo {
     font-size: 1.8rem;
     color: #005f5f;
-    margin-bottom: 0.5rem;
-    margin-top: 15px;
+    margin-bottom: 0rem;
+    margin: 0px;
   }
   
   .footer-col h3 {
@@ -55,6 +59,47 @@
   .no-bullets li {
     margin-bottom: 0.5rem; /* spacing between links */
   }
+  .facebook-icon {
+    font-size: .9rem;
+    color: #005f5f;
+    top: 6px;
+    margin-right: 5px; /* Optional: Facebook brand color */
+  }
+  
+  .logo-text-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 1px; /* space between image and text */
+  }
+  
+  .footer-logo-img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .footer-logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .software-house-logos {
+    display: flex;
+    gap: 2.2rem;
+    margin: 1rem 0;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .software-house-logos img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .software-house-logos a:hover img {
+    transform: scale(1.1);
+  }
   
 
   @media (max-width: 768px) {
@@ -68,6 +113,22 @@
       flex: none;
       width: 100%;
       max-width: 400px;
+    }
+    .footer-col.logo-col {
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo-text-wrap {
+      justify-content: center;
+    }
+  
+    .software-house-logos {
+      justify-content: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
     }
   }
   
