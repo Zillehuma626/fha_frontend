@@ -2,10 +2,13 @@ import React from 'react';
 import './Partners.css';
 import nestwellLogo from '../assets/images/Nestwell-Logo-C3.png';
 import optimaLogo from '../assets/images/cropped-Optima-Website-Logos-03-2048x918.png';
+import abihaLogo from '../assets/images/AbihaSa.png';
+import leatherEaseLogo from '../assets/images/LeatherEase.png';
 
 const partners = [
   {
     name: 'Abiha Sa Ltd',
+    logo: abihaLogo,
     url: 'https://find-and-update.company-information.service.gov.uk/company/14931598',
   },
   {
@@ -20,9 +23,11 @@ const partners = [
   },
   {
     name: 'Leather Ease Ltd',
+    logo: leatherEaseLogo,
     url: 'https://find-and-update.company-information.service.gov.uk/company/16571221',
   },
 ];
+
 
 const Partners = () => {
   return (
@@ -51,4 +56,3 @@ const Partners = () => {
 };
 
 export default Partners;
-
