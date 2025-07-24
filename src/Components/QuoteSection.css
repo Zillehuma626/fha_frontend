@@ -1,0 +1,187 @@
+.quote-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 95, 95, 0.1);
+  }
+  
+  .quote-heading-container {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .quote-main-heading {
+    font-size: 3rem;
+    color: #005f5f;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  
+  .heading-underline {
+    height: 5px;
+    width: 100px;
+    background-color: rgb(240, 189, 67);
+    margin: 0 auto;
+    border-radius: 3px;
+  }
+  
+  .quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .form-group label {
+    color: #005f5f;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .form-group input,
+  .business-type-select {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group input:focus,
+  .business-type-select:focus {
+    outline: none;
+    border-color: #005f5f;
+    box-shadow: 0 0 0 3px rgba(0, 95, 95, 0.1);
+    background-color: #fff;
+  }
+  
+  .service-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 0.8rem;
+  }
+  
+  .service-option {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 2rem;
+    font-size: 0.95rem;
+  }
+  
+  .service-option input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #005f5f;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .service-option:hover input ~ .checkmark {
+    background-color: #f0f9f9;
+  }
+  
+  .service-option input:checked ~ .checkmark {
+    background-color: #005f5f;
+    border-color: #005f5f;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .service-option input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .service-option .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .submit-btn {
+    background-color: #005f5f;
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  .submit-btn:hover {
+    background-color: #004747;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 95, 95, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .quote-section {
+      padding: 2rem 1.5rem;
+      margin: 3rem;
+    }
+    
+    .quote-main-heading {
+      font-size: 2.5rem;
+    }
+    
+    .service-options {
+      grid-template-columns: 1fr;
+    }
+    .submit-btn{
+        width: 60%;
+        padding: 1rem;
+        align-self: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .quote-main-heading {
+      font-size: 2rem;
+    }
+    .submit-btn{
+        width: 60%;
+        padding: 1rem;
+        align-self: center;
+    }
+    .heading-underline {
+      height: 4px;
+      width: 80px;
+    }
+  }
