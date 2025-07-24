@@ -36,8 +36,8 @@
 }
 
 .logo-img {
-  height: 40px;
-  margin-right: 10px;
+  height: 60px;
+  object-fit: contain;
 }
 
 .logo-text {
@@ -79,9 +79,6 @@
     width: 100%;
    
   }
-
-
-
 
 /* 🔽 Mobile Responsive Styles */
 @media (max-width: 768px) {
