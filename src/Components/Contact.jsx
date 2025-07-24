@@ -89,7 +89,7 @@ const Contact = () => {
         </div>
         <div className="info-box">
           <h4>Contact</h4>
-          <p>Contact@fhaccountants.co.uk <br />+923425650559</p>
+          <p>Contact@fhaccountants.co.uk</p>
         </div>
       </div>
 
