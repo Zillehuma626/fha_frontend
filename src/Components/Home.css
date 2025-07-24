@@ -49,9 +49,35 @@
   .cta-button:hover {
     transform: translateY(-4px); /* Move up slightly */
     background-color: #007878;  /* Lighter/brighter color */
-    box-shadow: 0 8px 16px rgba(0, 95, 95, 0.25); /* Smooth shadow */
+    box-shadow: 0 8px 16px rgba(27, 166, 78, 0.3);
     text-decoration: none;
     
+  }
+  .whatsapp-button {
+    padding: 0.75rem 2rem;
+    margin-left: 20px;
+    background-color: #005f5f; /* WhatsApp green */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #007878;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(27, 166, 78, 0.3);
+    text-decoration: none;
+  }
+  .whatsapp-icon {
+    font-size: 1rem;
+    margin-right: 3px;
+    vertical-align: middle; /* 👈 Ensures vertical alignment */
+   display: inline-block;
+   position: relative;
+   bottom: 2px;
   }
   .taglines {
     margin: 1rem 0;
@@ -84,12 +110,20 @@
   
     .mobile-heading {
       display: block;
+      margin-left: 1rem;
       font-size: 2rem;
       line-height: 1.4;
       margin-top: 0;
       padding-top: 1rem;
       color: whitesmoke;
     }
-    
+    .hero-section p {
+      font-size: 1.2rem;
+      color: whitesmoke;
+      margin-left: 2rem;
+    }
+    .cta-button{
+      margin-left: 2rem;
+    }
   }
   
