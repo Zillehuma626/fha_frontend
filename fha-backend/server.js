@@ -11,7 +11,9 @@ const PORT = process.env.PORT || 8000;
 app.use(express.json());
 const allowedOrigins = [
   "https://fhaaccountants.co.uk",      // ✅ Your actual frontend domain
-  "http://localhost:5713"
+  "http://localhost:5713",
+  "https://www.fhaaccountants.co.uk",
+  undefined
 ];
 
 const corsOptions = {
