@@ -4,6 +4,10 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/',
+  build: {
+    outDir: 'dist',
+  },
   preview: {
     allowedHosts: [
       'fha-accountants.onrender.com', // Your Render host
@@ -20,6 +24,7 @@ export default defineConfig({
     host:true,
     strictPort:true,
     port:8000,
+    historyApiFallback: true,
   },
   resolve: {
     alias: {
