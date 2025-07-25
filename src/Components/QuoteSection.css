@@ -134,6 +134,8 @@
     background-color: #005f5f;
     color: white;
     border: none;
+    width: 30%;
+    align-self: center;
     padding: 1.2rem;
     font-size: 1.1rem;
     border-radius: 8px;
