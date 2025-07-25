@@ -66,7 +66,7 @@ const QuoteSection = () => {
     setSubmitError(null);
 
     try {
-      const response = await fetch('https://fha-backend.onrender.com/api/get-my-code', {
+      const response = await fetch('https://fha-accountants-backend.onrender.com/api/get-my-code', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
