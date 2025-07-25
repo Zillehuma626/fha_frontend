@@ -13,7 +13,6 @@ const allowedOrigins = [
   "https://fhaaccountants.co.uk",      // ✅ Your actual frontend domain
   "http://localhost:5713",
   "https://www.fhaaccountants.co.uk",
-  undefined
 ];
 app.use(cors({
   origin: function (origin, callback) {
