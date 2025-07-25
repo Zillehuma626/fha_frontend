@@ -10,6 +10,9 @@ const QuoteSection = () => {
     services: []
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
+
   const businessTypes = [
     'Limited Company',
     'Sole Trader',
@@ -57,10 +60,43 @@ const QuoteSection = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Quote request:', formData);
-    alert('Thank you for your request! Our team will contact you within 24 hours.');
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch('https://fha-backend.onrender.com/api/get-my-code', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit quote');
+      }
+
+      // Reset form on success
+      setFormData({
+        name: '',
+        email: '',
+        telephone: '',
+        businessType: 'Limited Company',
+        services: []
+      });
+
+      alert('Thank you! Your quote request has been sent successfully.');
+    } catch (error) {
+      console.error('Error submitting quote:', error);
+      setSubmitError(error.message);
+      alert(`Error: ${error.message}`);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -70,6 +106,12 @@ const QuoteSection = () => {
         <div className="heading-underline"></div>
       </div>
       
+      {submitError && (
+        <div className="error-message">
+          {submitError}
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} className="quote-form">
         <div className="form-group">
           <label>Full Name:</label>
@@ -137,8 +179,12 @@ const QuoteSection = () => {
           </div>
         </div>
 
-        <button type="submit" className="submit-btn">
-          Get My Free Quote
+        <button 
+          type="submit" 
+          className="submit-btn"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? 'Sending...' : 'Get My Free Quote'}
         </button>
       </form>
     </section>
