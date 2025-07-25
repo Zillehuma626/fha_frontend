@@ -8,16 +8,27 @@ const getMyCodeRoutes = require('./routes/getMyCode'); // ✅ new
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8000;
-const allowedOrigins = [
-  "https://your-frontend.onrender.com", // Replace with your actual frontend URL
-  "http://localhost:5713"               // Keep for local development
-];
 app.use(express.json());
-app.use(cors({
-  origin: allowedOrigins,
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true // If using cookies/auth, optional
-}));
+const allowedOrigins = [
+  "https://fhaaccountants.co.uk",      // ✅ Your actual frontend domain
+  "http://localhost:5713"
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 app.use('/api/contact', contactRoutes);
 app.use('/api/get-my-code', getMyCodeRoutes); // ✅ new
 
