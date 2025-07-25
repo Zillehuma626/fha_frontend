@@ -52,11 +52,15 @@ const Navbar = () => {
           <Link to="/services" className="nav-item">Services</Link>
         </li>
         <li className="nav-item-container">
+          <Link to="/quoteSection" className="nav-item">Get Quote</Link>
+        </li>
+        <li className="nav-item-container">
           <Link to="/partners" className="nav-item">Partners</Link>
         </li>
         <li className="nav-item-container">
           <Link to="/contact" className="nav-item">Contact</Link>
         </li>
+        
       </ul>
     </nav>
   );
