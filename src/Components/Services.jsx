@@ -5,23 +5,23 @@ import './Services.css';
 const services = [
   {
     title: 'Auto-Enrolment Services',
-    image: 'https://benifex.com/wp-content/uploads/2025/03/iStock-1127302409.jpg'
+    image: 'https://res.cloudinary.com/dcqtytezw/image/upload/v1753463416/auto_kawkrn.jpg'
   },
   {
     title: 'Payroll',
-    image: 'https://image-assets.eu-2.volcanic.cloud/api/v1/assets/images/2c35d7e31b9457dcb90f816f12713bd4?fallback=true&format=&size=2000x860%3E&version=latest&webp_fallback=png'
+    image: 'https://res.cloudinary.com/dcqtytezw/image/upload/v1753461766/pay_q5sjp7.png'
   },
   {
     title: 'Taxation',
-    image: "https://tagco.pk/wp-content/uploads/2024/11/Tax-Consulting-to-Eliminate-Overpayment-scaled.jpg"
+    image: "https://res.cloudinary.com/dcqtytezw/image/upload/v1753461679/tax_y42iix.jpg"
   },
   {
     title: 'Accounting',
-    image: 'https://www.theaccountant-online.com/wp-content/uploads/sites/10/2024/08/shutterstock_2227145053.jpg'
+    image: 'https://res.cloudinary.com/dcqtytezw/image/upload/v1753461602/accounting_gztvjx.avif'
   },
   {
     title: 'Advisory',
-    image: 'https://sashandcompany.com/wp-content/uploads/2024/07/Types-of-Advisory-Services_-A-Comprehensive-Guide1.png'
+    image: 'https://res.cloudinary.com/dcqtytezw/image/upload/v1753461610/d_vjlnfp.jpg'
   }
 ];
 

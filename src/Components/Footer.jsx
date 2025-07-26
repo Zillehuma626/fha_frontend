@@ -18,23 +18,30 @@ const Footer = () => {
         <div className="footer-col logo-col">
           <h2 className="footer-logo">
           <span className="logo-text-wrap">
-              <img src={logo} alt="FHA Logo" className="footer-logo-img" />
+              <img
+  src="https://res.cloudinary.com/dcqtytezw/image/upload/v1753461626/FHA_xhsk5u.png"
+  alt="FHA Logo"
+  className="footer-logo-img"
+/>
               <span className="footer-logo-text">FHA Accountants</span>
             </span>
           </h2>
           <p>Precision-driven accounting and advisory services.</p>
           <div className="software-house-logos">
             <a href="https://www.accaglobal.com/gb/en.html" target="_blank" rel="noopener noreferrer">
-              <img src={accaLogo} alt="acca" />
+              <img src="https://res.cloudinary.com/dcqtytezw/image/upload/v1753461599/ACCA_ft1byi.png"alt="acca" />
             </a>
             <a href="https://www.xero.com/" target="_blank" rel="noopener noreferrer">
-              <img src={xeroLogo} alt="xero" />
+              <img src="https://res.cloudinary.com/dcqtytezw/image/upload/v1753461665/xero_ao6imm.svg" alt="xero" />
             </a>
-            <a href="https://www.taxcalc.com/" target="_blank" rel="noopener noreferrer">
-              <img src={taxcalcLogo} alt="taxcalc" />
-            </a>
+<a href="https://www.taxcalc.com/" target="_blank" rel="noopener noreferrer">
+  <img
+    src="https://res.cloudinary.com/dcqtytezw/image/upload/v1753461654/taxcalc_prubhi.png"
+    alt="taxcalc"
+  />
+</a>
             <a href="https://www.aiaworldwide.com/" target="_blank" rel="noopener noreferrer">
-              <img src={aiaLogo} alt="aia" />
+              <img src="https://res.cloudinary.com/dcqtytezw/image/upload/v1753461601/AIA_f2sapg.png" alt="aia" />
             </a>
           </div>
           <div className="social-icons">
