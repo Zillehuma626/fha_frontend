@@ -1,6 +1,6 @@
 .home-container {
     padding: 3rem 2rem;
-    background-image: url('../assets/images/home.jpg');
+    background-image: url('https://res.cloudinary.com/dcqtytezw/image/upload/v1753461641/home_r2wxkq.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,4 +126,4 @@
       margin-left: 2rem;
     }
   }
-  
+

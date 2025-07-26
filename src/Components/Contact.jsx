@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-image-wrapper">
           <img
-            src={contactImage}
+            src="https://res.cloudinary.com/dcqtytezw/image/upload/v1753461602/contact_xtu8p0.jpg"
             alt="Contact Us"
             className="contact-image"
           />
