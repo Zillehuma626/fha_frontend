@@ -128,7 +128,7 @@
   }
 @media (max-width: 480px) {
   .cta-button{
-      margin-left: 1rem;
+      margin-left: 0.25rem;
       padding: 10px 10px 10px 10px;
     }
     .whatsapp-button{
