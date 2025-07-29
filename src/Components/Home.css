@@ -6,7 +6,6 @@
     background-size: cover;
     color: #fff;
     min-height: 30vh;
-
   }
   
   .hero-section {
@@ -21,7 +20,7 @@
   
   .hero-section h1 {
     font-size: 3rem;
-    color: 	whitesmoke;
+    color: whitesmoke;
     margin-bottom: 3rem;
     margin-top: 140px;
   }
@@ -35,7 +34,7 @@
   
   .cta-button {
     padding: 0.75rem 2rem;
-    background-color: 	#005f5f;
+    background-color: #005f5f;
     color: white;
     font-weight: bold;
     border: none;
